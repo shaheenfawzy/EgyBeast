@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400&display=swap");
+
+body {
+  background-color: #131722;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #fff;
+}
+
+.container-w-90 {
+  width: 90% !important;
+  margin: auto;
+}
+
+.alt-font-color {
+  color: #949cb0;
+}
+
+.trending-title {
+  border-bottom: 1px solid #a8a8a83d;
+  position: relative;
+}
+.trending-title::before {
+  content: "";
+  width: 20%;
+  height: 1px;
+  position: absolute;
+  top: -20px;
+  left: 15px;
+  background-color: #a8a8a83d;
+}
+
+.poster-container {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.poster-container > .poster-img {
+  aspect-ratio: 2/3;
+  object-fit: cover;
+  transition: all 0.5s ease-in-out;
+}
+
+.poster-container:hover > .poster-img {
+  transform: scale(1.07);
+  opacity: 0.5;
+}
+
+.poster-container:not(.no-hover):hover > .play-btn {
+  opacity: 1 !important;
+}
+
+.poster-container > .play-btn {
+  transition: all 0.5s ease-in-out;
+  color: #3da3fa;
+}
+
+.poster-container > .rating-star {
+  top: 5px;
+  right: -2px;
+}
+.poster-container > .rating-star {
+  position: absolute;
+}
+.poster-container > .rating-star > i {
+  color: #fdcc0d;
+}
+.poster-container > .rating-star > .rating {
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 2px;
+}
+
+.pagination > .page-item:not(.active):not(.disabled) > .page-link {
+  user-select: none;
+  color: white !important;
+}
+.pagination > .page-item:not(.active) > .page-link {
+  border-color: #949cb0;
+}
+.pagination > .page-item.active > .page-link {
+  border-color: #fff;
+}
+
+.pagination > .disabled > .page-link {
+  color: #949cb0 !important;
+}
+
+.loading,
+.loading-page {
+  background-color: #131722;
+  z-index: 1;
+}
+
+.media-title {
+  font-size: 5rem;
+}
+
+.media-watch-title > h2 {
+  font-size: 4rem;
+}
